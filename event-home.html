@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        @media only screen and(max-width:768px) {
+            #container{
+                background-color: aqua;
+            }
+        }
+        #container{
+            border: 2px solid black;
+            height: 640px;
+            width: 1400px;
+        }
+        .heading{
+            font-family: cursive;
+            text-align: center;
+            line-height: 70px;
+            font-size: 40px;
+        }
+        .seat{
+            font-size: 25px;
+            text-align: center;
+        }
+        .box{
+            border: 2px solid black;
+            width: 1305px;
+            height: 380px;
+            position: absolute;
+            top: 220px;
+            left: 53px;
+        }
+        .internalBox{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top:270px ;
+            left: 150px;
+        }
+        .circle{
+            border-radius: 50%;
+            border: 2px solid black;
+            height: 125px;
+            width: 105px;
+            position: absolute;
+            top: 300px;
+            left: 200px;
+        }
+        .innerCircle{
+            position: absolute;
+            top: 330px;
+            left: 225px;
+            font-family: cursive;
+            font-size: 20px;
+        }
+        .name{
+            position: absolute;
+            top: 230px;
+            left: 700px;
+            font-size: 30px;
+        }
+        
+        .nameBox{
+            border: 2px solid black;
+            height: 25px;
+            width: 500px;
+            position: absolute;
+            top: 237px;
+            left: 800px;
+            
+        }
+        .mail{
+            position: absolute;
+            top: 280px;
+            left: 700px;
+            font-size: 30px;
+        }
+        .mailBox{
+            border: 2px solid black;
+            height: 25px;
+            width: 500px;
+            position: absolute;
+            top: 290px;
+            left: 800px;
+            
+        }
+        .phn{
+            position: absolute;
+            top: 330px;
+            left: 653px;
+            font-size: 30px;
+        }
+        .phnBox{
+            position: absolute;
+            top: 340px;
+            left: 800px;
+            border: 2px solid black;
+            height: 25px;
+            width: 500px;
+        }
+        .seatNumbers{
+            position: absolute;
+            top: 380px;
+            left: 570px;
+            font-size: 30px;
+
+        }
+        .seatBox{
+            border: 2px solid black;
+            height: 25px;
+            width: 120px;
+            position: absolute;
+            top: 390px;
+            left: 800px;
+        }
+        .drop{
+            position: absolute;
+            top: 385px;
+            left: 885px;
+            font-size: 30px;
+        }
+        .seatContent{
+            position: absolute;
+            top: 393px;
+            left: 835px;
+            font-size: 20px;
+            
+        }
+        .attendee{
+            position: absolute;
+            top: 430px;
+            left: 534px;
+            font-size: 30px;
+        }
+        .attendeeBox{
+            border: 2px solid black;
+            width: 500px;
+            height: 25px;
+            position: absolute;
+            top: 440px;
+            left: 800px;
+
+        }
+        .subBtn{
+            position: absolute;
+            top: 550px;
+            left: 650px;
+            font-family: cursive;
+            font-size: 20px;
+            width: 200px;
+        }
+        .canBtn{
+            position: absolute;
+            top: 550px;
+            left: 1000px;
+            font-family: cursive;
+            font-size: 20px;
+            width: 200px;
+        }
+
+    </style>
+    <div id="container">
+        <h1 class="heading">Event  1</h1>
+        <p class="seat">Number of available seats:     23</p>
+        <div class="box"></div>
+        <div class="internalBox"></div>
+        <div class="circle"></div>
+        <p class="innerCircle">Image</p>
+        <div class="description">
+            <span class="name">Name:</span>
+            <div class="nameBox"></div>
+            <div class="mail">Email:</div>
+            <div class="mailBox"></div>
+            <div class="phn">Phone No:</div>
+            <div class="phnBox"></div>
+            <div class="seatNumbers">Number Of seats:</div>
+            <div class="seatBox" ></div>
+            <div class="drop"><i class="fa-solid fa-caret-down"></i></div>
+            <div class="seatContent">2</div>
+            <div class="attendee">Name of Attendee 2:</div>
+            <div class="attendeeBox"></div>
+            <button class="subBtn">Submit</button>
+            <button class="canBtn">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

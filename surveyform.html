@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #container{
+            border: 1px solid gray;
+            margin-left: 200px;
+            width: 740px;
+            padding-left: 30px;
+        }
+        .name::after{
+            content: '*';
+            color: red;
+        }
+        .email::after{
+            content: '*';
+            color: red;
+        }
+        .experience::after{
+            content: '*';
+            color: red;
+        }
+        .satisfied::after{
+            content: '*';
+            color: red;
+        }
+        .like::after{
+            content: '*';
+            color: red;
+        }
+        .nameInput{
+            height: 23px;
+            width: 180px;
+        }
+        .emailInput{
+            width: 390px;
+            height: 23px;
+        }
+        .first{
+            font-size: 15px;
+        }
+        .colorStar{
+            color: orange;
+            font-size:20px ;
+        }
+       table{
+        width:100%;
+        border-collapse: collapse;
+       }
+       tbody>tr:nth-child(odd){
+            background-color: gainsboro;
+        }
+       
+    </style>
+    <div id="container">
+        <form action="" id="form">
+            <label for="fname" class="name" ><b>Name</b></label><br>
+            <input type="text" id="fname" class="nameInput" required>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <input type="text" id="fname" class="nameInput"><br>
+            <label for="" class="first">First</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">&nbsp;</label>
+            <label for="">Last</label><br><br>
+            <label for="email" class="email"><b>Email</b></label><br>
+            <input type="email" id="email" class="emailInput"><br><br>
+            <label for="" class="experience"><b>Your Experience</b></label><br>
+            <i class="fa-solid fa-star colorStar"></i>
+            <i class="fa-solid fa-star colorStar"></i>
+            <i class="fa-solid fa-star colorStar"></i>
+            <i class="fa-solid fa-star colorStar"></i>
+            <i class="fa-solid fa-star colorStar"></i><br>
+            <p>Overall, how would you rate you expierence with us?</p>
+            <p class="satisfied"><b>How satisfied are you with</b></p>
+            <table class="table">
+                <thead>
+                    <tr>
+                       <th></th>
+                        <th>Very unsatisfied</th>
+                       
+                        <th>Unsatisfied</th>
+                       
+                        <th>Neutral</th>
+                       
+                        <th>Satisfied</th>
+                       
+                        <th>Very Satisfied</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="purchase">
+                        <th >Purchase</th>
+                 
+                        <th><input type="radio" name="purchase"></th>
+                      
+                        <th><input type="radio" name="purchase"></th>
+                     
+                        <th><input type="radio" name="purchase"></th>
+                       
+                        <th><input type="radio" name="purchase"></th>
+                       
+                        <th><input type="radio" name="purchase"></th>
+                    </tr>
+                    <tr>
+                        <th>Service</th>
+                       
+                        <th><input type="radio" name="service"></th>
+                       
+                        <th><input type="radio" name="service"></th>
+                       
+                        <th><input type="radio" name="service"></th>
+                       
+                        <th><input type="radio" name="service"></th>
+                        
+                        <th><input type="radio" name="service"></th>
+                    </tr>
+                    <tr>
+                        <th>Company Overall</th>
+                     
+                        <th><input type="radio" name="Overall"></th>
+                        
+                        <th><input type="radio" name="Overall"></th>
+                        
+                        <th><input type="radio" name="Overall"></th>
+                        
+                        <th><input type="radio" name="Overall"></th>
+                       
+                        <th><input type="radio" name="Overall"></th>
+                    </tr>
+                </tbody>
+
+            </table>
+            <p class="like"><b>How likely are you to</b></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        
+                        <th>Very Unlikely</th>
+                    
+                        <th>Unlikely</th>
+                      
+                        <th>Neutral</th>
+                        
+                        
+                        <th>Likely</th>
+                       
+                         <th>Vey Likely</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Buy from us again</th>
+                       
+                        
+                       
+                        <th><input type="radio" name="Buy"></th>
+                     
+                        <th><input type="radio" name="Buy"></th>
+                       
+                        <th><input type="radio" name="Buy"></th>
+                       
+                        <th><input type="radio" name="Buy"></th>
+                     
+                        <th><input type="radio" name="Buy"></th>
+                    </tr>
+                    <tr>
+                        <th>Recommend our products to others</th>
+                       
+                        <th><input type="radio" name="products"></th>
+                     
+                        <th><input type="radio" name="products"></th>
+                     
+                        <th><input type="radio" name="products"></th>
+                        
+                        <th><input type="radio" name="products"></th>
+                     
+                        <th><input type="radio" name="products"></th>
+                    </tr>
+                    <tr>
+                        <th>Recomend our company to others</th>
+                      
+                      
+                        <th><input type="radio" name="company"></th>
+                       
+                        <th><input type="radio" name="company"></th>
+                        
+                        <th><input type="radio" name="company"></th>
+                       
+                        <th><input type="radio" name="company"></th>
+                      
+                        <th><input type="radio" name="company"></th>
+                    </tr>
+                </tbody>
+            </table><br>
+            <div>Additional comments or suggestions</div>
+            <textarea name="" id="" cols="90" rows="5"></textarea><br>
+            <input type="submit">
+
+
+            
+        </form>
+    </div>
+</body>
+</html>
